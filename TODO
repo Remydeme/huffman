@@ -1,6 +1,6 @@
 TODO:
 
 OK____ TREE ____ 
-KO____HUFFMAN_TABLE___ BUG to fix in this function 
-KO____HUFFMAN_COMPRESSION__ in a file with each bit representing a code character
-KO____HUFFMAN_COMPRESSION__ in binary 
+OK____HUFFMAN_TABLE___ BUG to fix in this function 
+OK____HUFFMAN_COMPRESSION__ in a file with each bit representing a code character
+KO____HUFFMAN_COMPRESSION__ in binary remain to implement it in binary 
