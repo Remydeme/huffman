@@ -13,9 +13,7 @@ node_s *add_node_tree(list_s *list)
 		list = list_pop(list);
 		node_s *root = calloc(1, sizeof (node_s));
 		root->l = left_node;
-		left_node->tag = '0'; 
 		root->r = right_node;
-		right_node->tag = '1';
 		root->freq = right_node->freq + left_node->freq;
 		list = insert_node(list, root);
 	}
@@ -28,7 +26,7 @@ void print_tree(node_s *root)
 {
 	if (root)
 	{
-		printf ("tag %c , frequency : %d ", root->tag, root->freq);
+		printf ("frequency : %d ", root->freq);
 		if (!root->l && !root->r)
 			printf ("|| letter : %c  ||", root->letter);
 		printf ("\n");

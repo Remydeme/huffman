@@ -11,11 +11,8 @@ int main(int argc, char *argv[])
 	if (argc > 1)
 	{
 		int letter[255] = {0};
-		for (int i = 1; i < argc; i++)
-		{
-			read_file(argv[i], letter);
-		        codage_huffman(letter);
-		}
+			read_file(argv[1], letter);
+		        codage_huffman(letter, argv[1], argv[2]);
 	}
 	return 0;
 }

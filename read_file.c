@@ -25,6 +25,7 @@ void read_file(const char *file_name, int letter[255])
 {
 	FILE *stream = open_file(file_name);
 	get_frequency(letter, stream);
+	fclose(stream);
 	display_frequency(letter);
 }
 

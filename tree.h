@@ -12,7 +12,6 @@ struct node_s
 	node_s *l;
 	node_s *r;
 	unsigned char letter;
-	unsigned tag;
 };
 
 node_s *build_tree(int letter[LETTER_MAX], int *counter);

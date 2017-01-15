@@ -14,8 +14,10 @@ struct huffman_s
 	char *code;
 };
 
-void huffman_table(node_s *root, char *code, int index, huffman_s *table, int *letter);
+void huffman_table(node_s *root, char *code,  int index, huffman_s *table);
 
-void codage_huffman(int letter[LETTER_MAX]);
+void huffman_normal_table(node_s *root, char *code, int index, huffman_s *table, int *letter);
+
+void codage_huffman(int letter[LETTER_MAX], const char *input_file, const char *output_file);
 
 #endif 
